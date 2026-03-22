@@ -3,7 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=[
+    "http://localhost:3000",
+    "https://ma-clone.vercel.app"  # ← replace with your actual Vercel URL
+])
 
 # ── Database connection ───────────────────────────────────────────────────────
 import os
