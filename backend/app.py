@@ -6,8 +6,12 @@ app = Flask(__name__)
 CORS(app)
 
 # ── Database connection ───────────────────────────────────────────────────────
-# Replace 'your_password' with the password you set during PostgreSQL installation
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:post1234@localhost:5432/market_analysis"
+import os
+
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get(
+    "DATABASE_URL",
+    "postgresql://postgres:post1234@localhost:5432/market_analysis"
+).replace("postgres://", "postgresql://", 1)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
