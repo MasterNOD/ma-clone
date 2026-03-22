@@ -1,0 +1,63 @@
+/* ── Highlight checkboxes ────────────────────────────────────────────────────*/
+
+.highlight-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.highlight-check {
+  font-size: 14px;
+}
+
+/* ── Visible columns checkboxes ──────────────────────────────────────────────*/
+
+.column-check {
+  font-size: 14px;
+}
+
+/* ── Table ───────────────────────────────────────────────────────────────────*/
+
+.products-table {
+  font-size: 13px;
+  background-color: white;
+}
+
+.products-table th,
+.products-table td {
+  white-space: nowrap;
+}
+
+/* ── Brand colored cells ─────────────────────────────────────────────────────*/
+
+.brand-cell {
+  font-weight: 700;
+  color: white;
+}
+
+.brand-cell.brand-samsung { background-color: #1428A0; }
+.brand-cell.brand-lg      { background-color: #A50034; }
+.brand-cell.brand-hisense { background-color: #00A8B0; }
+.brand-cell.brand-default { background-color: #6c757d; }
+
+/* ── Highlight colors ────────────────────────────────────────────────────────*/
+
+.highlight-diff     { background-color: rgba(220, 53, 69, 0.15) !important; }
+.highlight-same     { background-color: rgba(25, 135, 84, 0.15) !important; }
+.highlight-diff-hdr { background-color: rgba(220, 53, 69, 0.35) !important; }
+.highlight-same-hdr { background-color: rgba(25, 135, 84, 0.35) !important; }
+
+/* ── 4K support (>1920px) ────────────────────────────────────────────────────*/
+
+@media (min-width: 1921px) {
+
+  .highlight-label,
+  .highlight-check,
+  .column-check {
+    font-size: 0.73vw;  /* 14px */
+  }
+
+  .products-table {
+    font-size: 0.68vw;  /* 13px */
+  }
+
+}

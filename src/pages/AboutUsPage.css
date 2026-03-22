@@ -1,0 +1,319 @@
+/* ── Hero ────────────────────────────────────────────────────────────────────*/
+
+.about-page {
+  background-color: #f8f9fa;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #0d1b4b 0%, #1428A0 60%, #1a73e8 100%);
+  padding: 96px 0 80px;
+  color: white;
+}
+
+.about-hero-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 16px;
+}
+
+.about-hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.about-hero-subtitle {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 0;
+}
+
+/* ── Stats ───────────────────────────────────────────────────────────────────*/
+
+.about-stats {
+  background: white;
+  padding: 56px 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+
+.about-stat-card {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.about-stat-icon {
+  font-size: 32px;
+  color: #1428A0;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.about-stat-value {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0d1b4b;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.about-stat-label {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+/* ── Sections ────────────────────────────────────────────────────────────────*/
+
+.about-section {
+  padding: 96px 0;
+  background-color: #f8f9fa;
+}
+
+.about-section--alt {
+  background-color: white;
+}
+
+.about-section-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1428A0;
+  margin-bottom: 12px;
+}
+
+.about-section-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0d1b4b;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.about-section-text {
+  font-size: 16px;
+  color: #6c757d;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ── Mission visual ──────────────────────────────────────────────────────────*/
+
+.about-mission-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+}
+
+.about-mission-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(20, 40, 160, 0.12);
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+.about-mission-ring--lg {
+  width: 300px;
+  height: 300px;
+  animation-delay: 0s;
+}
+
+.about-mission-ring--md {
+  width: 220px;
+  height: 220px;
+  animation-delay: 0.4s;
+}
+
+.about-mission-ring--sm {
+  width: 140px;
+  height: 140px;
+  animation-delay: 0.8s;
+  background: rgba(20, 40, 160, 0.04);
+}
+
+@keyframes pulse-ring {
+  0%, 100% { transform: scale(1);    opacity: 1; }
+  50%       { transform: scale(1.05); opacity: 0.6; }
+}
+
+.about-mission-icon {
+  font-size: 64px;
+  color: #1428A0;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Feature cards ───────────────────────────────────────────────────────────*/
+
+.about-feature-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 32px 24px;
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.about-feature-icon {
+  font-size: 36px;
+  color: #1428A0;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0d1b4b;
+  margin-bottom: 12px;
+}
+
+.about-feature-text {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ── Team cards ──────────────────────────────────────────────────────────────*/
+
+.about-team-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.about-team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1428A0, #1a73e8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.about-team-avatar .material-icons {
+  font-size: 36px;
+  color: white;
+}
+
+.about-team-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0d1b4b;
+  margin-bottom: 4px;
+}
+
+.about-team-role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1428A0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-team-bio {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ── Footer ──────────────────────────────────────────────────────────────────*/
+
+.about-footer {
+  background: linear-gradient(135deg, #0d1b4b 0%, #1428A0 100%);
+  padding: 64px 0;
+  color: white;
+  text-align: center;
+}
+
+.about-footer-icon {
+  font-size: 48px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-footer-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.about-footer-text {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 0;
+}
+
+/* ── 4K support (>1920px) ────────────────────────────────────────────────────*/
+
+@media (min-width: 1921px) {
+
+  .about-hero {
+    padding: 5vw 0 4.17vw;
+  }
+
+  .about-hero-label    { font-size: 0.68vw; letter-spacing: 0.10vw; margin-bottom: 0.83vw; }
+  .about-hero-title    { font-size: 2.50vw; margin-bottom: 1.25vw; }
+  .about-hero-subtitle { font-size: 0.94vw; }
+
+  .about-stats         { padding: 2.92vw 0; }
+  .about-stat-card     { padding: 1.25vw 0.83vw; }
+  .about-stat-icon     { font-size: 1.67vw; margin-bottom: 0.63vw; }
+  .about-stat-value    { font-size: 2.08vw; margin-bottom: 0.42vw; }
+  .about-stat-label    { font-size: 0.73vw; }
+
+  .about-section       { padding: 5vw 0; }
+  .about-section-label { font-size: 0.68vw; letter-spacing: 0.10vw; margin-bottom: 0.63vw; }
+  .about-section-title { font-size: 1.88vw; margin-bottom: 1.25vw; }
+  .about-section-text  { font-size: 0.83vw; margin-bottom: 0.83vw; }
+
+  .about-mission-visual       { height: 16.67vw; }
+  .about-mission-ring--lg     { width: 15.63vw; height: 15.63vw; }
+  .about-mission-ring--md     { width: 11.46vw; height: 11.46vw; }
+  .about-mission-ring--sm     { width: 7.29vw;  height: 7.29vw;  }
+  .about-mission-icon         { font-size: 3.33vw; }
+
+  .about-feature-card  { border-radius: 0.83vw; padding: 1.67vw 1.25vw; }
+  .about-feature-icon  { font-size: 1.88vw; margin-bottom: 0.83vw; }
+  .about-feature-title { font-size: 0.89vw; margin-bottom: 0.63vw; }
+  .about-feature-text  { font-size: 0.73vw; }
+
+  .about-team-card     { border-radius: 0.83vw; padding: 1.67vw 1.25vw; }
+  .about-team-avatar   { width: 3.75vw; height: 3.75vw; margin-bottom: 1.04vw; }
+  .about-team-avatar .material-icons { font-size: 1.88vw; }
+  .about-team-name     { font-size: 0.89vw; margin-bottom: 0.21vw; }
+  .about-team-role     { font-size: 0.68vw; margin-bottom: 0.63vw; }
+  .about-team-bio      { font-size: 0.73vw; }
+
+  .about-footer        { padding: 3.33vw 0; }
+  .about-footer-icon   { font-size: 2.50vw; margin-bottom: 0.83vw; }
+  .about-footer-title  { font-size: 1.46vw; margin-bottom: 0.63vw; }
+  .about-footer-text   { font-size: 0.83vw; }
+
+}

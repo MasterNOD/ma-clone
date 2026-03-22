@@ -1,0 +1,68 @@
+/* ── Panels ──────────────────────────────────────────────────────────────────*/
+
+.filter-panel,
+.content-panel,
+.columns-panel {
+  background-color: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.columns-panel {
+  padding: 16px 24px;
+  margin-bottom: 24px;
+}
+
+/* ── Filter labels ───────────────────────────────────────────────────────────*/
+
+.filter-label {
+  min-width: 52px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.column-header {
+  flex: 1;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.column-spacer {
+  width: 31px;
+  flex-shrink: 0;
+}
+
+/* ── 4K support (>1920px) ────────────────────────────────────────────────────*/
+/* formula: vw = (px / 1920) * 100                                             */
+
+@media (min-width: 1921px) {
+
+  .filter-panel,
+  .content-panel,
+  .columns-panel {
+    border-radius: 0.83vw;   /* 16px */
+    padding: 1.25vw;         /* 24px */
+    box-shadow: 0 0.21vw 0.83vw rgba(0, 0, 0, 0.12);  /* 0 4px 16px */
+  }
+
+  .columns-panel {
+    padding: 0.83vw 1.25vw;  /* 16px 24px */
+    margin-bottom: 1.25vw;   /* 24px */
+  }
+
+  .filter-label {
+    min-width: 2.71vw;  /* 52px */
+    font-size: 0.73vw;  /* 14px */
+  }
+
+  .column-header {
+    font-size: 0.68vw;  /* 13px */
+  }
+
+  .column-spacer {
+    width: 1.61vw;  /* 31px */
+  }
+
+}
