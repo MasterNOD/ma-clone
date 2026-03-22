@@ -60,7 +60,7 @@ const SPEC_COLUMNS: SpecColumn[] = [
   { key: "smart_os",        label: "Smart OS"       },
 ];
 
-const API = "http://localhost:5000/api";
+const API = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api";
 
 const emptyFilter = (id: number): ProductFilter => ({
   id, brandId: "", modelId: "", inches: "", brands: [], models: [], inchesList: [],

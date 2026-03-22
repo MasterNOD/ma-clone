@@ -6,7 +6,7 @@ interface Brand   { id: number; name: string; }
 interface Model   { id: number; name: string; }
 interface Product { id: number; brand: string; model: string; inches: number; market: string; year: number; }
 
-const API     = "http://localhost:5000/api";
+const API = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api";
 const markets = ["US", "KR", "CN"];
 
 const SellsTrackerPage = () => {
